@@ -152,7 +152,7 @@ hotel_project/
 ## 🌐 Live Demo
 
 👉 **Streamlit App:**
-.
+https://hotelproject-kw26e2mnqcnaq7in9nexen.streamlit.app/
 
 ---
 
