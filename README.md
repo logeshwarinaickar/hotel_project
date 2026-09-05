@@ -93,14 +93,6 @@ Leakage-prone fields such as `reservation_status` and `reservation_status_date` 
 
 **Model Used:** Tuned Random Forest Classifier
 
-### Model Performance
-
-* **Accuracy:** 74.67%
-* **Precision:** 68.80%
-* **Recall:** 37.93%
-* **F1 Score:** 48.90%
-* **ROC-AUC:** 82.14%
-
 The model uses a time-based train-test split, with earlier years used for training and 2017 used as the test period.
 
 ---
@@ -110,12 +102,6 @@ The model uses a time-based train-test split, with earlier years used for traini
 **Model Used:** LSTM (Long Short-Term Memory)
 
 The LSTM model learns historical daily occupancy patterns and generates a **7-day occupancy forecast**.
-
-### Model Performance
-
-* **MAE:** 22.89 rooms
-* **RMSE:** 35.80 rooms
-* **R² Score:** 82.85%
 
 ---
 
@@ -166,7 +152,7 @@ hotel_project/
 ## 🌐 Live Demo
 
 👉 **Streamlit App:**
-[Add your deployed Streamlit app link here]
+.
 
 ---
 
