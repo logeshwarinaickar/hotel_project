@@ -72,7 +72,6 @@ def create_daily_occupancy(df):
 
 st.set_page_config(
     page_title="Hotel Booking & Occupancy Dashboard",
-    page_icon="🏨",
     layout="wide"
 )
 
@@ -214,7 +213,7 @@ df_dl = pd.read_csv("hotel_bookings.csv")
 # TITLE
 # ============================================================
 
-st.title("🏨 Hotel Booking & Occupancy Dashboard")
+st.title(" Hotel Booking & Occupancy Dashboard")
 
 st.write(
     "AI-powered hotel booking cancellation risk and occupancy "
@@ -235,7 +234,7 @@ daily_occupancy = create_daily_occupancy(df_dl)
 # CANCELLATION RISK
 # ============================================================
 
-st.header("🎯 Booking Cancellation Risk")
+st.header(" Booking Cancellation Risk")
 
 st.write(
     "Enter the booking details available at the time of reservation "
@@ -246,7 +245,7 @@ st.write(
 # BOOKING DETAILS
 # ============================================================
 
-st.subheader("📋 Booking Details")
+st.subheader(" Booking Details")
 
 col1, col2 = st.columns(2)
 
@@ -381,7 +380,7 @@ previous_bookings_not_canceled = 0
 # ============================================================
 
 if st.button(
-    "🔮 Predict Cancellation Risk",
+    " Predict Cancellation Risk",
     use_container_width=True
 ):
 
@@ -474,7 +473,7 @@ if st.button(
 
     st.divider()
 
-    st.subheader("📊 Cancellation Risk Result")
+    st.subheader(" Cancellation Risk Result")
 
     result_col1, result_col2 = st.columns(2)
 
@@ -489,15 +488,15 @@ if st.button(
 
         if risk == "LOW":
 
-            st.success("🟢 LOW RISK")
+            st.success(" LOW RISK")
 
         elif risk == "MEDIUM":
 
-            st.warning("🟡 MEDIUM RISK")
+            st.warning(" MEDIUM RISK")
 
         else:
 
-            st.error("🔴 HIGH RISK")
+            st.error(" HIGH RISK")
 
     st.info(
         f"Based on the booking information provided, "
@@ -511,7 +510,7 @@ if st.button(
 
 st.divider()
 
-st.header("📈 Future Occupancy Forecast")
+st.header(" Future Occupancy Forecast")
 
 st.write(
     "Use historical occupancy patterns learned by the LSTM model "
@@ -636,7 +635,7 @@ if len(daily_occupancy) >= 7:
             "Expected Occupied Rooms": predictions
         })
 
-        st.subheader("🔮 7-Day Occupancy Forecast")
+        st.subheader(" 7-Day Occupancy Forecast")
 
         st.dataframe(
             forecast_df,
@@ -648,7 +647,7 @@ if len(daily_occupancy) >= 7:
         # Forecast chart
         # ----------------------------------------------------
 
-        st.subheader("📊 Forecast Trend")
+        st.subheader(" Forecast Trend")
 
         chart_df = pd.DataFrame({
             "Date": forecast_dates,
