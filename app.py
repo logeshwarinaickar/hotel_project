@@ -522,7 +522,7 @@ st.write(
 # ------------------------------------------------------------
 
 forecast_start_date = st.date_input(
-    "📅 Select Forecast Start Date",
+    "Select Forecast Start Date",
     value=date.today()
 )
 
